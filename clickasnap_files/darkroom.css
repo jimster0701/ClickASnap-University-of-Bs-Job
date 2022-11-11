@@ -1,10 +1,10 @@
 body {
-    width: 3840px;
+    width: 5760px;
     height: 1080px;
     padding: 0;
     margin: 0;
     overflow-y: hidden;
-    overflow-x: auto;
+    overflow-x: scroll;
 }
 
 body::-webkit-scrollbar {
@@ -12,7 +12,7 @@ body::-webkit-scrollbar {
 }
 
 #mainCanvas {
-    width: 3840px;
+    width: 5760px;
     height: 1080px;
     border:1px solid black;
 }
