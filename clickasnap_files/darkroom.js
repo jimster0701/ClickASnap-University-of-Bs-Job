@@ -14,3 +14,15 @@ line(200, 800, 0, 1080);
 line(200, 800, 1720, 800);
 line(1720, 0, 1720, 800);
 line(1720, 800, 1920, 1080);
+
+function drawFloor() {
+    ctx.beginPath();
+    ctx.moveTo(200, 800);
+    ctx.lineTo(1720, 800);
+    ctx.lineTo(1920, 1080);
+    ctx.lineTo(0, 1080);
+    ctx.fillStyle="#404040";
+    ctx.fill();
+}
+
+drawFloor();
