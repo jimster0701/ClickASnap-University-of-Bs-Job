@@ -1,4 +1,4 @@
-const mainCanvas = Document.getElementById("mainCanvas");
+const mainCanvas = document.getElementById("mainCanvas");
 mainCanvas.width = "500px";
 mainCanvas.height= "500px";
 
