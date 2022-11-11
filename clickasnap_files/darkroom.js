@@ -1,28 +1,18 @@
 const mainCanvas = document.getElementById("mainCanvas");
-const ctx = mainCanvas.getContext("2d"); 
+const ctx = mainCanvas.getContext("2d");
 ctx.lineWidth = 2;
 ctx.strokeRect(0, 0, 1920, 1080);
 
-function line(a, b, c, d) {
-    ctx.moveTo(a, b);
-    ctx.lineTo(c, d);
-    ctx.stroke();
-}
-
-line(200, 0, 200, 800);
-line(200, 800, 0, 1080);
-line(200, 800, 1720, 800);
-line(1720, 0, 1720, 800);
-line(1720, 800, 1920, 1080);
-
-function drawFloor() {
+function box(coordinates, fill) {
     ctx.beginPath();
-    ctx.moveTo(200, 800);
-    ctx.lineTo(1720, 800);
-    ctx.lineTo(1920, 1080);
-    ctx.lineTo(0, 1080);
-    ctx.fillStyle="#404040";
+    ctx.moveTo(coordinates[0][0], coordinates[0][1]);
+    for (let i = 1; i < coordinates.length; i++) {
+        ctx.lineTo(coordinates[i][0], coordinates[i][1]);
+    }
+    ctx.stroke();
+    ctx.fillStyle = fill;
     ctx.fill();
 }
 
-drawFloor();
+box([[200, 0], [1720, 0], [1720, 800], [200, 800]], "rgba(255, 0, 0, 0.5)");
+box([[200, 800], [1720, 800], [1920, 1080], [0, 1080]], "rgba(0, 255, 0, 0.5)");  
