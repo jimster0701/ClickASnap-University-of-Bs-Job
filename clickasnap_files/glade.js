@@ -1,0 +1,1 @@
+console.warn("Sunset Notice: Beginning May 22, 2022, the Google Publisher Tag Light (Glade) will no longer be able to request ads. To avoid a disruption in service, update your site to use the Google Publisher Tag (GPT) instead. See https://developers.google.com/publisher-tag.");
