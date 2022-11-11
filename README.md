@@ -1,4 +1,4 @@
-# ClickASnap: University of B's Job
+# ClickASnap: Dark Abyss
 
 ## Team Members
 
