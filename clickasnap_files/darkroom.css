@@ -1,3 +1,4 @@
+/* text */
 body {
     width: 5760px;
     height: 1080px;
@@ -5,12 +6,24 @@ body {
     margin: 0;
     overflow-y: hidden;
     overflow-x: hidden;
+    font-family: Arial;
+    font-weight: 600;
+    color: #494949;
 }
 
 body::-webkit-scrollbar {
     display: none;
 }
 
+h1 {
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* canvas */
 .Canvas-Container {
     position: absolute;
 }
@@ -18,27 +31,31 @@ body::-webkit-scrollbar {
 #mainCanvas {
     width: 5760px;
     height: 1080px;
-    border:1px solid black;
+    border: 1px solid black;
+}
+
+/* divs and blocks */
+.infoScreen {
+    position: absolute;
+    top: 400px;
+    height: fit-content;
+    margin-top: 2px;
+    padding: 8px;
+    border: solid 1px gray;
+    border-radius: 8px;
+    background-color: #DAAD86;
+    width: 93%;
+    box-shadow: 6px 6px 8px;
+}
+.infoScreen > img {
+    float: right;
+    border: 0.5rem solid black;
 }
 
 #JOBO-CPP3 {
     position: absolute;
     top: 300px;
     left: 400px;
-}
-
-.infoScreen {
-    position: absolute;
-    top: 400px;
-    width: 700px;
-    height: fit-content;
-    background-color: brown;
-    border: 1px solid black;
-    border-radius: 1rem;
-}
-.infoScreen > img {
-    float: right;
-    border: 0.5rem solid black;
 }
 
 #Marrutt-Dryer {
