@@ -4,11 +4,15 @@ body {
     padding: 0;
     margin: 0;
     overflow-y: hidden;
-    overflow-x: scroll;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
     display: none;
+}
+
+.Canvas-Container {
+    position: absolute;
 }
 
 #mainCanvas {
