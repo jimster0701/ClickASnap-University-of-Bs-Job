@@ -10,8 +10,16 @@
     <body>
         <div class="Canvas-Container" style="left: 0px;">
             <canvas id="mainCanvas" width="5760" height="1080"></canvas>
-            <img src="clickasnap_files/JF-4089-2.png" id="JOBO-CPP3" >
-            <img src="clickasnap_files/marrutt-Film-Dryer.png" id="Marrutt-Dryer">
+            <img src="clickasnap_files/JF-4089-2.png" id="JOBO-CPP3" onclick="showInfo('JOBO-Info')">
+            <div class="infoScreen" id="JOBO-Info">
+                <h1>JOBO CPP3</h1>
+                <p>Info.</p>
+            </div>
+            <img src="clickasnap_files/marrutt-Film-Dryer.png" id="Marrutt-Dryer" onclick="showInfo('Marrutt-Info')">
+            <div class="infoScreen" id="Marrutt-Info">
+                <h1>Marrutt Film Drying Cabinet</h1>
+                <p>Info.</p>
+            </div>
         </div>
     </body>
 </html>

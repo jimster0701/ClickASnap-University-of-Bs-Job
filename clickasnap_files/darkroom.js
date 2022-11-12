@@ -19,6 +19,17 @@ ctx.lineWidth = 2;
 ctx.strokeRect(0, 0, roomSize, 1080);
 
 
+const infoArr = [...document.getElementsByClassName("infoScreen")];
+let position = 600;
+infoArr.forEach(e => {
+    e.style.left = position+"px";
+    e.style.display = "none";
+    position += 960;
+});
+
+
+
+
 /* Room Functions */
 function shape(coordinates, fill) {
     ctx.beginPath();
@@ -58,7 +69,7 @@ function scroll(event) {
     if(left>0) // Extra checks due to bug
         canvasContainer[0].style.left = "0px";
     else if (left<(1000-(roomSize-(1920)/2)))
-        canvasContainer[0].style.left = 1000-(roomSize-(1920)/2)+100+"px";
+        canvasContainer[0].style.left = 1000-(roomSize-(1920)/2)+100+"px"; // dont ask
 
     else 
         canvasContainer[0].style.left = (left+event.deltaY)+"px";
@@ -70,3 +81,18 @@ if(document.attachEvent)
     document.attachEvent("on"+mousewheelEvent, function(e){scroll(e)});
 else if (document.addEventListener)
     document.addEventListener(mousewheelEvent,  function(e){scroll(e)}, false);
+
+
+function showInfo(id) {
+    infoArr.forEach((e)=>{
+        if(e.id != id) return; 
+        
+        e.style.display = e.style.display == "none" ? "block" : "none";
+    });
+}
+
+
+/*
+function centerScreen(id) {
+    canvasContainer[0].style.left = ;
+}*/

@@ -27,6 +27,20 @@ body::-webkit-scrollbar {
     left: 400px;
 }
 
+.infoScreen {
+    position: absolute;
+    top: 400px;
+    width: 700px;
+    height: fit-content;
+    background-color: brown;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+.infoScreen > img {
+    float: right;
+    border: 0.5rem solid black;
+}
+
 #Marrutt-Dryer {
     position: absolute;
     left: 1650px;
