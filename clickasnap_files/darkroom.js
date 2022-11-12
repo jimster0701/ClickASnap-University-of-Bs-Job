@@ -58,7 +58,7 @@ function scroll(event) {
     if(left>0) // Extra checks due to bug
         canvasContainer[0].style.left = "0px";
     else if (left<(1000-(roomSize-(1920)/2)))
-        canvasContainer[0].style.left = "-3700px";
+        canvasContainer[0].style.left = 1000-(roomSize-(1920)/2)+100+"px";
 
     else 
         canvasContainer[0].style.left = (left+event.deltaY)+"px";
