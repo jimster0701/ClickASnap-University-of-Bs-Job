@@ -18,7 +18,6 @@ const roomSize = 5760; // def: 1920
 ctx.lineWidth = 2;
 ctx.strokeRect(0, 0, roomSize, 1080);
 
-
 const infoArr = [...document.getElementsByClassName("infoScreen")];
 let position = 600;
 infoArr.forEach(e => {
@@ -26,8 +25,6 @@ infoArr.forEach(e => {
     e.style.display = "none";
     position += 930;
 });
-
-
 
 
 /* Room Functions */
@@ -89,7 +86,6 @@ function showInfo(id) {
         e.style.display = e.style.display == "none" ? "block" : "none";
     });
 }
-
 
 function centerScreen(id) {
     let targetLeft = parseInt(document.getElementById(id).style.left.slice(0,-2));

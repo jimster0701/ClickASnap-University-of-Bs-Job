@@ -68,6 +68,8 @@ p {
     float: right;
     border: 0.1rem solid black;
     margin: 0rem 1rem 1rem 0.5rem;
+    height: auto;
+    width: 250px;
 }
 
 #JOBO-CPP3 {
