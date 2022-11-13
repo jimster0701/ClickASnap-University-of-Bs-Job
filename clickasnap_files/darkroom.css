@@ -101,3 +101,12 @@ p {
     width: auto;
     height: 200px;
 }
+
+#Logo {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: auto;
+    width: 200px;
+    padding: 1rem;
+}
