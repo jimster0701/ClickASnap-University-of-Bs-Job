@@ -1,5 +1,7 @@
 # ClickASnap: Dark Abyss
 
+An interactive dark room for the ClickASnap hackathon, go to [darkabyss.tk](https://darkabyss.tk) for the prototype.
+
 ## Team Members
 
 <table>

@@ -46,7 +46,23 @@ p {
     background-color: #DAAD86;
     width: 93%;
     box-shadow: 6px 6px 8px;
+    width: 720px;
 }
+
+.close {
+    display: inline-block;
+    position: absolute;
+    left: 712px;
+    top: 0px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.infoScreen h1, .infoScreen p {
+    text-align: center;
+    margin: 20px;
+}
+
 .infoScreen > img {
     float: right;
     border: 0.5rem solid black;
@@ -65,3 +81,4 @@ p {
     width: auto;
     height: 1000px;
 }
+
