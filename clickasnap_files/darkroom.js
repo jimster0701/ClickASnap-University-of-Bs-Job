@@ -24,7 +24,7 @@ let position = 600;
 infoArr.forEach(e => {
     e.style.left = position+"px";
     e.style.display = "none";
-    position += 960;
+    position += 930;
 });
 
 
@@ -85,14 +85,13 @@ else if (document.addEventListener)
 
 function showInfo(id) {
     infoArr.forEach((e)=>{
-        if(e.id != id) return; 
-        
+        if(e.id != id) return;
         e.style.display = e.style.display == "none" ? "block" : "none";
     });
 }
 
 
-/*
 function centerScreen(id) {
-    canvasContainer[0].style.left = ;
-}*/
+    let targetLeft = parseInt(document.getElementById(id).style.left.slice(0,-2));
+    canvasContainer[0].style.left = -(targetLeft-500)+"px";
+}

@@ -39,6 +39,7 @@ p {
     position: absolute;
     top: 400px;
     height: fit-content;
+    margin: 20px;
     margin-top: 2px;
     padding: 8px;
     border: solid 1px gray;
@@ -58,14 +59,15 @@ p {
     cursor: pointer;
 }
 
-.infoScreen h1, .infoScreen p {
+.infoScreen h1 {
     text-align: center;
     margin: 20px;
 }
 
 .infoScreen > img {
     float: right;
-    border: 0.5rem solid black;
+    border: 0.1rem solid black;
+    margin: 0rem 1rem 1rem 0.5rem;
 }
 
 #JOBO-CPP3 {
@@ -82,3 +84,18 @@ p {
     height: 1000px;
 }
 
+#DE-Vere-504-Enlarger {
+    position: absolute;
+    left: 2620px;
+    top: 100px;
+    width: auto;
+    height: 700px;
+}
+
+#Trays {
+    position: absolute;
+    left: 4290px;
+    top: 600px;
+    width: auto;
+    height: 200px;
+}
